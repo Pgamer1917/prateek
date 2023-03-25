@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        @keyframes fadein {
+            0% {opacity:0;top:600px}
+            50% {opacity:0;}
+            100% {opacity:1;}
+        }
+        body{
+            background-repeat: no-repeat;
+            background-image: url(backg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .everything{
+            background-color: black;
+            color:white;
+            font-size: 20px;
+            padding:0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position:relative;
+            padding-top: 2%;
+            padding-bottom: 3%;
+            padding-left: 10%;
+            padding-right: 3px;
+            left:30%;
+            top:50px;
+            height: 550px;
+            width:30%;
+            border-radius: 15px;
+            animation-name: fadein;
+            animation-duration: 2.5s;
+        }
+        #button{
+            background-color: green;
+            width:120px;
+            padding:5px;
+            border-radius: 7px;
+            position:relative;
+            left:20%;
+            top:5%;
+            text-decoration: none;
+        }
+        #but{
+            color:white;
+            text-decoration: none;
+        }
+        #button:hover{
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="payment" class="everything">
+        <h1>Payment page</h1>
+        <p>Accepted cards</p>
+        <label for="card">Card Type</label>
+        <select name="mycard" id="card">
+            <option value="credit card">Visa</option>
+            <option value="master card">master card</option>
+            <option value="debit card">debit card</option>
+        </select>
+        <br><br>
+        <form action="backend.php">
+            <label for="username">Name on Card</label>
+            <input type="text"placeholder="enter user name of card"name="myName" id="username"required>
+            <br><br>
+            <label for="cardno">Credit Card Number</label>
+            <input type="text"placeholder="enter user name of card"name="myName" id="cardno"required>
+            <br><br>
+            <label for="expmonth">Expiry Month</label>
+            <input type="text"placeholder="enter user name of card"name="myName" id="expmonth"required>
+            <br><br>
+            <label for="expyear">Expiry Year</label>
+            <input type="text"placeholder="enter user name of card"name="myName" id="expyear"required>
+            <br><br>
+        </form>
+        <a href="placed.html"id="but"><p id="button">Place order</p></a>
+        </div>
+        
+        </body>
+
+        </html>
