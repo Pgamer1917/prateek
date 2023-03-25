@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes grow{
+            0% {width:0;opacity:0;left:50%;top:20%;}
+            100% {opacity:1}
+        }
+        #p{
+            padding: 10px;
+            border-radius: 10px;
+            background-color:black;
+        }
+        
+        #link{
+            position: absolute;
+            left:30%;
+            top:475px;
+            font-size: 30px;
+            text-decoration: none;
+            color:white;
+            border-radius: 10px;
+            
+        }
+        
+        body{
+            background-repeat: no-repeat;
+            background-image: url(backg.jpg);
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+        #greentick{
+            width:200px;
+            position:absolute;
+            left:35%;
+            top:10%;
+            border-radius: 300px;
+            animation-name: grow;
+            animation-duration: 2.5s;
+        }
+        #txt{
+            color:white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            left:25%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            top:400px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        h1{
+            color:white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            left:25%;
+            top:300px;
+        }
+        #hello{
+            width:45%;
+            height:600px;
+            position: absolute;
+            left:33%;
+            top:60px;
+            border-radius: 20px;
+            background-color: #1b1b1b;
+        }
+        #p:hover{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <div id="hello"><h1>Your order is placed!</h1>
+        <div id="txt">
+            <p>Transaction-ID - PSUFH18SDKJ48326</p>
+            <p>Order no. - 3274676324</p>
+        </div>
+        
+        <a id="link" href="home.html"><p id="p">back to shopping!!</p></a>
+        <img src="greentick.png" alt="green tick" id="greentick">
+    </div>
+        
+        
+</body>
+</html>
