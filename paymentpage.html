@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <h1>Payment page</h1>
+    <p>Accepted cards</p>
+    <label for="card">Card Type</label>
+    <select name="mycard" id="card">
+        <option value="credit card">Visa</option>
+        <option value="master card">master card</option>
+        <option value="debit card">debit card</option>
+    </select>
+    <br><br>
+    <form action="backend.php">
+        <label for="username">Name on Card</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="username"required>
+        <br><br>
+        <label for="cardno">Credit Card Number</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="cardno"required>
+        <br><br>
+        <label for="expmonth">Expiry Month</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="expmonth"required>
+        <br><br>
+        <label for="expyear">Expiry Year</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="expyear"required>
+        <br><br>
+        <h2>Shipping Address</h2>
+        <label for="Fullname">Full name</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="Fullname"required>
+        <br><br>
+        <label for="email">Email Id</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="email"required>
+        <br><br>
+        <label for="address">Address</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="address"required>
+        <br><br>
+        <label for="city">City</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="city"required>
+        <br><br>
+        <label for="state">State</label>
+        <input type="text"placeholder="enter user name of card"name="myName" id="state"required>
+        <br><br>
+        <input type="submit"value="Place order">
+    </form>
+    
+
+    
+
+</body>
+</html>
