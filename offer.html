@@ -7,26 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>offers</title>
     <style>
-       @keyframes exam{
-        0%{font-size: 40px;}
-        25%{font-size: 42px;}
-        50%{font-size: 44px;}
-        75%{font-size: 46px;}
-        100%{font-size: 48px;}
-       }
-       body{
-            background-color: black;
-            border-style: solid;
-            border-color: aliceblue;
-            border-width: 8px;
-            padding-bottom: 6%;
+       
+       #logo{
+            background-color:rgb(24, 10, 25);
+            color: white;
+            border-radius: 15px;
+            margin: 10px;
+            font-style: bold;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        #srch{
+            width:30%;
+            position:relative;
+            left:10%;
+            bottom:10px;
+            height:30px;
+        }
+        #hphone{
+            height: 200px;
+        }
+        #profile{
+            border-radius: 500px;
+            width:3%;
+            position:relative;
+            top:10px;
+            right:5px;
+            height: 2.5%;
+            float: right;
+        }
+        .button{
+            font-size: 25px;
+            /* padding-top: 20px;*/
+            margin-left: 10px; 
+            position: relative;
+            bottom:10px;
+            padding: 3px;
+            color: white;
+            text-decoration: none;
+            background-color: rgb(65, 0, 91);
+            
+        }
+        .button:hover{
+            background-color: #936767;
+        }
+       #hline{
+            background-color:rgb(65, 0, 91);
+            border: solid;
+            margin:0px;
+            /* padding:10px;*/
+        }
+        body{
+            background-repeat: no-repeat;
+            background-image: url(backg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
         }
         .deal{
             /* margin-top: 0%; */
             border-style: solid;
             border-width: 8px;
             border-color: aliceblue;
-            border-radius: 800px;
+            border-radius: 40px;
             padding-left: 20%;
             margin-left: 20%;
             margin-right: 20%;
@@ -37,9 +80,20 @@
             animation-name: exam;
             animation-duration: 4s;
         }
+        #offer{
+            background-color: rgb(59, 107, 1);
+        }
     </style>
 </head>
 <body>
+    <div id="hline">
+        <span id="logo">MyKart</span>
+        <a href="home.html" class="button" id="home">Home</a>
+        <a href="offer.html" class="button" id="offer">Offers</a>
+        <a href="review.html" class="button">Review</a>
+        <input type="text" id="srch" placeholder="Search">
+        <img src="./pro.png" alt="" id="profile"> 
+    </div>
     <h1 class="animi"style="font-size: 50px;color: aliceblue;margin-left: 40%;">MyKart</h1>
     <div class="deal">
         
