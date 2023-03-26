@@ -39,19 +39,19 @@
         #button{
             background-color: green;
             width:120px;
-            padding:5px;
+            padding:8px;
             border-radius: 7px;
+            border:none;
             position:relative;
             left:20%;
+            font-size: 20px;
+            color:white;
+            text-decoration: none;
             top:5%;
             text-decoration: none;
         }
-        #but{
-            color:white;
-            text-decoration: none;
-        }
         #button:hover{
-            padding: 8px;
+            padding: 10px;
         }
     </style>
 </head>
@@ -68,7 +68,7 @@
             <option value="debit card">debit card</option>
         </select>
         <br><br>
-        <form action="backend.php">
+        <form action="placed.html">
             <label for="username">Name on Card</label>
             <input type="text"placeholder="enter user name of card"name="myName" id="username"required>
             <br><br>
@@ -81,8 +81,9 @@
             <label for="expyear">Expiry Year</label>
             <input type="text"placeholder="enter user name of card"name="myName" id="expyear"required>
             <br><br>
+        
+        <input type="submit" id="button" value="place order">
         </form>
-        <a href="placed.html"id="but"><p id="button">Place order</p></a>
         </div>
         
         </body>
