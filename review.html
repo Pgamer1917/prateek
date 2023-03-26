@@ -9,19 +9,125 @@
         #hello{
             position:relative;
             margin-left: 5%;
-            margin-top: 5%;
+            margin-top: 2%;
             top:100px;
+            font-size: 20px;
+            color:white;
             border-style: solid;
             border-width: 2px;
             width:50%;
             padding-left:500px;
         }
+        @keyframes exam{
+        0%{font-size: 40px;}
+        25%{font-size: 42px;}
+        50%{font-size: 44px;}
+        75%{font-size: 46px;}
+        100%{font-size: 48px;}
+       }
+       #logo{
+            background-color:rgb(24, 10, 25);
+            color: white;
+            border-radius: 15px;
+            margin: 10px;
+            font-style: bold;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        #srch{
+            width:30%;
+            position:relative;
+            left:10%;
+            bottom:10px;
+            height:30px;
+        }
+        #hphone{
+            height: 200px;
+        }
+        #profile{
+            border-radius: 500px;
+            width:3%;
+            position:relative;
+            top:5px;
+            right:20px;
+            height: 2.5%;
+            /* float: right; */
+        }
+        .button{
+            font-size: 25px;
+            /* padding-top: 20px;*/
+            margin-left: 10px; 
+            position: relative;
+            bottom:10px;
+            padding: 3px;
+            color: white;
+            text-decoration: none;
+            background-color: rgb(65, 0, 91);
+            
+        }
+        .button:hover{
+            background-color: #936767;
+        }
+       #hline{
+            background-color:rgb(65, 0, 91);
+            border: solid;
+            margin:0px;
+            /* padding:10px;*/
+        }
+        body{
+            background-repeat: no-repeat;
+            background-image: url(backg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .deal{
+            /* margin-top: 0%; */
+            border-style: solid;
+            border-width: 8px;
+            border-color: aliceblue;
+            border-radius: 800px;
+            padding-left: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        .animi{
+            animation-name: exam;
+            animation-duration: 4s;
+        }
+        #review{
+            background-color: rgb(59, 107, 1);
+        }
+        #submit{
+            background-color: green;
+            width:120px;
+            padding:8px;
+            border-radius: 7px;
+            border:none;
+            position:relative;
+            left:20%;
+            font-size: 20px;
+            color:white;
+            text-decoration: none;
+            top:5%;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <div id="hline">
+        <span id="logo">MyKart</span>
+        <a href="home.html" class="button" id="home">Home</a>
+        <a href="offer.html" class="button" id="offer">Offers</a>
+        <a href="review.html" class="button" id="review">Review</a>
+        <input type="text" id="srch" placeholder="Search">
+        <img src="./pro.png" alt="" id="profile"> 
+    </div>
     <div id="hello">
     <h1>Write a review</h1>
-    <form action="backend.php">
+    <form action="home.html">
         <div>
             First name: <input type="text" name="myname">
         </div>
@@ -37,6 +143,7 @@
         <div>
             Write review: <textarea name="mytext" col="1900" rows="10"></textarea>
         </div>
+        <input type="submit" id="submit">
     </form>
 </div>
 </body>
