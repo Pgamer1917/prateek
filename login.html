@@ -13,8 +13,9 @@
         }
         body{
             background-repeat: no-repeat;
-            background-image: url(blackbg.avif);
-            background-size: 200%;
+            background-image: url(backg.jpg);
+            background-size:cover;
+            background-attachment: fixed;
         }
         #main{
             position: absolute;
@@ -96,7 +97,7 @@
 <body>
     <div id="main">
         <h1 id="login">MyKart Login</h1>
-        <form action="backend.php">
+        <form action="home.html">
             <label for="name" class="content">User Name</label>
             <div class="input">
                 <input type="text" placeholder="Enter username"name="myname"id="name" class="input" required>
@@ -107,7 +108,7 @@
             </div>
             <br>
             <div >
-                <a href="home.html" id="submit">Login</a>
+                <input type="submit" id="submit" value="Login">
             </div>
         </form>
     </div>
