@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Details</title>
+    <title>Payment</title>
     <style>
         @keyframes fadein {
             0% {opacity:0;top:500px}
@@ -19,17 +19,18 @@
         }
         #button{
             background-color: green;
-            width:70px;
+            width:100px;
             padding:7px;
             border-radius: 7px;
             position:relative;
             left:20%;
             text-decoration: none;
-        }
-        #but{
             color:white;
             text-decoration: none;
+            font-size: 20px;
+            border:none;
         }
+        
         .everything{
             background-color: black;
             color:white;
@@ -61,7 +62,7 @@
 
         <div id="shipping" class="everything">
             <h2>Shipping Address</h2>
-            <form action="backend.php"></form>
+            <form action="payment.html">
             <label for="Fullname">Full name</label>
             <input type="text"placeholder="enter user name of card"name="myName" id="Fullname" class=""required>
             <br><br>
@@ -77,7 +78,7 @@
             <label for="state">State</label>
             <input type="text"placeholder="enter user name of card"name="myName" id="state"required>
             <br><br>
-            <a href="payment.html"id="but"><p id="button">Submit</p></a>
+            <input type="Submit" id="button">
         </form>
     </div>
 
